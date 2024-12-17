@@ -1,0 +1,1542 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='HR data (HR Data)' inline='true' name='federated.0ykysxo0s6rhk0172pwe81gunhg6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HR Data' name='excel-direct.1ek9rym1qyv42x1gn2xd417ldk2k'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/chinju/Documents/My Tableau Repository/Workbooks/HR Analytics/HR Data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1ek9rym1qyv42x1gn2xd417ldk2k' name='HR data' table='[&apos;HR data$&apos;]' type='table'>
+          <columns gridOrigin='A1:AM1471:no:A1:AM1471:0' header='yes' outcome='6'>
+            <column datatype='string' name='Attrition' ordinal='0' />
+            <column datatype='string' name='Business Travel' ordinal='1' />
+            <column datatype='string' name='CF_age band' ordinal='2' />
+            <column datatype='string' name='CF_attrition label' ordinal='3' />
+            <column datatype='string' name='Department' ordinal='4' />
+            <column datatype='string' name='Education Field' ordinal='5' />
+            <column datatype='string' name='emp no' ordinal='6' />
+            <column datatype='integer' name='Employee Number' ordinal='7' />
+            <column datatype='string' name='Gender' ordinal='8' />
+            <column datatype='string' name='Job Role' ordinal='9' />
+            <column datatype='string' name='Marital Status' ordinal='10' />
+            <column datatype='string' name='Over Time' ordinal='11' />
+            <column datatype='string' name='Over18' ordinal='12' />
+            <column datatype='integer' name='Training Times Last Year' ordinal='13' />
+            <column datatype='integer' name='Age' ordinal='14' />
+            <column datatype='integer' name='CF_current Employee' ordinal='15' />
+            <column datatype='integer' name='Daily Rate' ordinal='16' />
+            <column datatype='integer' name='Distance From Home' ordinal='17' />
+            <column datatype='string' name='Education' ordinal='18' />
+            <column datatype='integer' name='Employee Count' ordinal='19' />
+            <column datatype='integer' name='Environment Satisfaction' ordinal='20' />
+            <column datatype='integer' name='Hourly Rate' ordinal='21' />
+            <column datatype='integer' name='Job Involvement' ordinal='22' />
+            <column datatype='integer' name='Job Level' ordinal='23' />
+            <column datatype='integer' name='Job Satisfaction' ordinal='24' />
+            <column datatype='integer' name='Monthly Income' ordinal='25' />
+            <column datatype='integer' name='Monthly Rate' ordinal='26' />
+            <column datatype='integer' name='Num Companies Worked' ordinal='27' />
+            <column datatype='integer' name='Percent Salary Hike' ordinal='28' />
+            <column datatype='integer' name='Performance Rating' ordinal='29' />
+            <column datatype='integer' name='Relationship Satisfaction' ordinal='30' />
+            <column datatype='integer' name='Standard Hours' ordinal='31' />
+            <column datatype='integer' name='Stock Option Level' ordinal='32' />
+            <column datatype='integer' name='Total Working Years' ordinal='33' />
+            <column datatype='integer' name='Work Life Balance' ordinal='34' />
+            <column datatype='integer' name='Years At Company' ordinal='35' />
+            <column datatype='integer' name='Years In Current Role' ordinal='36' />
+            <column datatype='integer' name='Years Since Last Promotion' ordinal='37' />
+            <column datatype='integer' name='Years With Curr Manager' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AM1471:no:A1:AM1471:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attrition</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Attrition]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Attrition</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Business Travel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Business Travel]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Business Travel</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF_age band</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CF_age band]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>CF_age band</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF_attrition label</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[CF_attrition label]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>CF_attrition label</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education Field</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education Field]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Education Field</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp no</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[emp no]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>emp no</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employee Number]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Employee Number</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Role</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Job Role]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Job Role</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Marital Status</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Marital Status]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Marital Status</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over Time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Over Time]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Over Time</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Over18</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Over18]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Over18</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Training Times Last Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Training Times Last Year]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Training Times Last Year</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CF_current Employee</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CF_current Employee]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>CF_current Employee</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Daily Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Daily Rate]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Daily Rate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance From Home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Distance From Home]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Distance From Home</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Education</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Education]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Education</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employee Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employee Count]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Employee Count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Environment Satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Environment Satisfaction]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Environment Satisfaction</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hourly Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hourly Rate]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Hourly Rate</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Involvement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Involvement]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Job Involvement</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Level]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Job Level</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job Satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job Satisfaction]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Job Satisfaction</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monthly Income]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Monthly Income</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Monthly Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Monthly Rate]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Monthly Rate</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Num Companies Worked</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Num Companies Worked]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Num Companies Worked</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percent Salary Hike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Percent Salary Hike]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Percent Salary Hike</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Performance Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Performance Rating]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Performance Rating</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Relationship Satisfaction</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Relationship Satisfaction]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Relationship Satisfaction</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Standard Hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Standard Hours]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Standard Hours</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stock Option Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stock Option Level]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Stock Option Level</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Working Years</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Working Years]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Total Working Years</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Work Life Balance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Work Life Balance]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Work Life Balance</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years At Company</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years At Company]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Years At Company</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years In Current Role</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years In Current Role]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Years In Current Role</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years Since Last Promotion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years Since Last Promotion]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Years Since Last Promotion</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years With Curr Manager</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Years With Curr Manager]</local-name>
+            <parent-name>[HR data]</parent-name>
+            <remote-alias>Years With Curr Manager</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='CF age band' datatype='string' name='[CF_age band]' role='dimension' type='nominal' />
+      <column caption='CF attrition label' datatype='string' name='[CF_attrition label]' role='dimension' type='nominal' />
+      <column caption='CF current Employee' datatype='integer' name='[CF_current Employee]' role='measure' type='quantitative' />
+      <column caption='Attrition count' datatype='integer' name='[Calculation_154529787416035328]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Attrition] == &apos;Yes&apos;&#10;    then 1&#10;ELSE 0&#10;END' />
+      </column>
+      <column caption='Attrition Rate' datatype='real' name='[Calculation_154529787417686017]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Calculation_154529787416035328])/ SUM([Employee Count])' />
+      </column>
+      <column caption='Active Emp Count' datatype='integer' name='[Calculation_154529787419353090]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Employee Count])- SUM([Calculation_154529787416035328])' />
+      </column>
+      <column caption='Emp Count' datatype='integer' name='[Employee Count]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Employee Number]' role='dimension' type='ordinal' />
+      <column caption='HR data' datatype='table' name='[__tableau_internal_object_id__].[HR data_8B131FE4677240E6B0584111804D2E7A]' role='measure' type='quantitative' />
+      <column caption='Emp No' datatype='string' name='[emp no]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/3c/q81wwlcs74v7654b041q6trc0000gn/T/tableau-temp/#TableauTemp_1f0r6991hts91w1bsfsbu0d7s3lv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/14/2024 07:55:37 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Attrition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Attrition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Attrition</remote-alias>
+              <ordinal>0</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Business Travel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Business Travel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Business Travel</remote-alias>
+              <ordinal>1</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CF_age band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CF_age band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CF_age band</remote-alias>
+              <ordinal>2</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CF_attrition label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CF_attrition label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CF_attrition label</remote-alias>
+              <ordinal>3</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>4</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education Field</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education Field]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education Field</remote-alias>
+              <ordinal>5</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emp no</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[emp no]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emp no</remote-alias>
+              <ordinal>6</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1470</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employee Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employee Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employee Number</remote-alias>
+              <ordinal>7</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1470</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>8</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Role</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Role</remote-alias>
+              <ordinal>9</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Marital Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Marital Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Marital Status</remote-alias>
+              <ordinal>10</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Over Time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Over Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Over Time</remote-alias>
+              <ordinal>11</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Over18</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Over18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Over18</remote-alias>
+              <ordinal>12</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Training Times Last Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Training Times Last Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Training Times Last Year</remote-alias>
+              <ordinal>13</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>14</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CF_current Employee</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CF_current Employee]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CF_current Employee</remote-alias>
+              <ordinal>15</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Daily Rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Daily Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Daily Rate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>790</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distance From Home</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Distance From Home]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distance From Home</remote-alias>
+              <ordinal>17</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Education</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Education]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Education</remote-alias>
+              <ordinal>18</ordinal>
+              <family>HR data</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Employee Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Employee Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Employee Count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Environment Satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Environment Satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Environment Satisfaction</remote-alias>
+              <ordinal>20</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hourly Rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hourly Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hourly Rate</remote-alias>
+              <ordinal>21</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Involvement</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Job Involvement]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Involvement</remote-alias>
+              <ordinal>22</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Job Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Level</remote-alias>
+              <ordinal>23</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Job Satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Satisfaction</remote-alias>
+              <ordinal>24</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthly Income</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monthly Income]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthly Income</remote-alias>
+              <ordinal>25</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1174</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Monthly Rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Monthly Rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Monthly Rate</remote-alias>
+              <ordinal>26</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1267</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Num Companies Worked</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Num Companies Worked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Num Companies Worked</remote-alias>
+              <ordinal>27</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Percent Salary Hike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Percent Salary Hike]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Percent Salary Hike</remote-alias>
+              <ordinal>28</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Performance Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Performance Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Performance Rating</remote-alias>
+              <ordinal>29</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Relationship Satisfaction</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Relationship Satisfaction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Relationship Satisfaction</remote-alias>
+              <ordinal>30</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Standard Hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Standard Hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Standard Hours</remote-alias>
+              <ordinal>31</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stock Option Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stock Option Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stock Option Level</remote-alias>
+              <ordinal>32</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Working Years</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Working Years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total Working Years</remote-alias>
+              <ordinal>33</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Work Life Balance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Work Life Balance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Work Life Balance</remote-alias>
+              <ordinal>34</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years At Company</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years At Company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years At Company</remote-alias>
+              <ordinal>35</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years In Current Role</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years In Current Role]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years In Current Role</remote-alias>
+              <ordinal>36</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years Since Last Promotion</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years Since Last Promotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years Since Last Promotion</remote-alias>
+              <ordinal>37</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years With Curr Manager</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Years With Curr Manager]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years With Curr Manager</remote-alias>
+              <ordinal>38</ordinal>
+              <family>HR data</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[HR data_8B131FE4677240E6B0584111804D2E7A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='HR data' id='HR data_8B131FE4677240E6B0584111804D2E7A'>
+            <properties context=''>
+              <relation connection='excel-direct.1ek9rym1qyv42x1gn2xd417ldk2k' name='HR data' table='[&apos;HR data$&apos;]' type='table'>
+                <columns gridOrigin='A1:AM1471:no:A1:AM1471:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Attrition' ordinal='0' />
+                  <column datatype='string' name='Business Travel' ordinal='1' />
+                  <column datatype='string' name='CF_age band' ordinal='2' />
+                  <column datatype='string' name='CF_attrition label' ordinal='3' />
+                  <column datatype='string' name='Department' ordinal='4' />
+                  <column datatype='string' name='Education Field' ordinal='5' />
+                  <column datatype='string' name='emp no' ordinal='6' />
+                  <column datatype='integer' name='Employee Number' ordinal='7' />
+                  <column datatype='string' name='Gender' ordinal='8' />
+                  <column datatype='string' name='Job Role' ordinal='9' />
+                  <column datatype='string' name='Marital Status' ordinal='10' />
+                  <column datatype='string' name='Over Time' ordinal='11' />
+                  <column datatype='string' name='Over18' ordinal='12' />
+                  <column datatype='integer' name='Training Times Last Year' ordinal='13' />
+                  <column datatype='integer' name='Age' ordinal='14' />
+                  <column datatype='integer' name='CF_current Employee' ordinal='15' />
+                  <column datatype='integer' name='Daily Rate' ordinal='16' />
+                  <column datatype='integer' name='Distance From Home' ordinal='17' />
+                  <column datatype='string' name='Education' ordinal='18' />
+                  <column datatype='integer' name='Employee Count' ordinal='19' />
+                  <column datatype='integer' name='Environment Satisfaction' ordinal='20' />
+                  <column datatype='integer' name='Hourly Rate' ordinal='21' />
+                  <column datatype='integer' name='Job Involvement' ordinal='22' />
+                  <column datatype='integer' name='Job Level' ordinal='23' />
+                  <column datatype='integer' name='Job Satisfaction' ordinal='24' />
+                  <column datatype='integer' name='Monthly Income' ordinal='25' />
+                  <column datatype='integer' name='Monthly Rate' ordinal='26' />
+                  <column datatype='integer' name='Num Companies Worked' ordinal='27' />
+                  <column datatype='integer' name='Percent Salary Hike' ordinal='28' />
+                  <column datatype='integer' name='Performance Rating' ordinal='29' />
+                  <column datatype='integer' name='Relationship Satisfaction' ordinal='30' />
+                  <column datatype='integer' name='Standard Hours' ordinal='31' />
+                  <column datatype='integer' name='Stock Option Level' ordinal='32' />
+                  <column datatype='integer' name='Total Working Years' ordinal='33' />
+                  <column datatype='integer' name='Work Life Balance' ordinal='34' />
+                  <column datatype='integer' name='Years At Company' ordinal='35' />
+                  <column datatype='integer' name='Years In Current Role' ordinal='36' />
+                  <column datatype='integer' name='Years Since Last Promotion' ordinal='37' />
+                  <column datatype='integer' name='Years With Curr Manager' ordinal='38' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#69aaa5' fontsize='22'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HR data (HR Data)' name='federated.0ykysxo0s6rhk0172pwe81gunhg6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ykysxo0s6rhk0172pwe81gunhg6'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Attrition]' role='dimension' type='nominal' />
+            <column caption='Attrition count' datatype='integer' name='[Calculation_154529787416035328]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [Attrition] == &apos;Yes&apos;&#10;    then 1&#10;ELSE 0&#10;END' />
+            </column>
+            <column caption='Attrition Rate' datatype='real' name='[Calculation_154529787417686017]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Calculation_154529787416035328])/ SUM([Employee Count])' />
+            </column>
+            <column caption='Active Emp Count' datatype='integer' name='[Calculation_154529787419353090]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Employee Count])- SUM([Calculation_154529787416035328])' />
+            </column>
+            <column datatype='string' name='[Education]' role='dimension' type='nominal' />
+            <column caption='Emp Count' datatype='integer' name='[Employee Count]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Education]' derivation='None' name='[none:Education:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_154529787416035328]' derivation='Sum' name='[sum:Calculation_154529787416035328:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Employee Count]' derivation='Sum' name='[sum:Employee Count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_154529787417686017]' derivation='User' name='[usr:Calculation_154529787417686017:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_154529787419353090]' derivation='User' name='[usr:Calculation_154529787419353090:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Employee Count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Calculation_154529787416035328:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787417686017:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787419353090:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[avg:Age:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Employee Count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Calculation_154529787416035328:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787417686017:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787419353090:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[none:Education:nk]'>
+            <groupfilter function='level-members' level='[none:Education:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ykysxo0s6rhk0172pwe81gunhg6].[:Measure Names]</column>
+            <column>[federated.0ykysxo0s6rhk0172pwe81gunhg6].[none:Education:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787417686017:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Employee Count:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[sum:Calculation_154529787416035328:qk]' value='n#,##0;-#,##0' />
+            <format attr='text-format' field='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[usr:Calculation_154529787419353090:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0ykysxo0s6rhk0172pwe81gunhg6].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0ykysxo0s6rhk0172pwe81gunhg6].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{C160881F-49B2-4AD0-946B-68FFF466CAA7}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AFAB2596-0591-4775-A599-C9FD639E5698}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='KPI' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAR+0lEQVR4nO3ce4xcdf3/8dfsbul2u7SwlFLSQilYqgVsRRvtP1xsA0lJLIgKKookiKbB
+      kKggoQlaCanSEKMQjQIiERMEYhAhkBhvSROaIlBKG4HS21K2UEovlnZvnZ3vH4QGA/jL74tf
+      Krwfj2ST7ZyZM58z8zl9njNnso1Wq9UKAOW0HewBAHBwCABAUQIAUJQAABQlAABFCQBAUQIA
+      UJQAABQlAABFCQBAUQIAUJQAABQlAABFCQBAUQIAUJQAABQlAABFCQBAUQIAUJQAABQlAABF
+      CQBAUQIAUJQAvIf19/fn29/+di6//PJcfvnlueWWW97R+p5++ulcddVV+cpXvpIHHnjgHa3r
+      scceS19f3ztaB/9727dvz9e+9rXcfffdB25bsWJFXn755SSvzZ0///nPGRkZedNj9+/fn898
+      5jNpNpt57rnn8vTTTydJdu/enW984xvZuXPnu7MRb+HJJ59Mb2/vQXv+95v2733ve9872IPg
+      f2dwcDC/+MUvcsMNN+S0007LKaeckra2tmzZsiV9fX3ZunVrDjnkkKxevTodHR3p6urK+vXr
+      s3v37qxfvz4TJkxIe3t7kmTnzp258sorc8EFF+SLX/xixowZkyOOOCKbNm3K2rVrM27cuHR2
+      dmbLli3p6OhIe3t7Nm3alEMPPTS9vb0ZGBjIU089la6urgwPD+fnP/959u7dm+7u7hx22GFp
+      NBoH+dWq5a9//Wu2b9+eJ554IgsXLsyuXbty8803J0m6urqyZcuW3HzzzTnxxBMzevTobN++
+      Pe3t7dm8eXPGjRuXD37wg+np6cndd9+dtWvX5sgjj8yECRNy3HHHZfLkyWm1WlmzZk02b96c
+      CRMmpKOjI+vXr8/Q0FDWrFmTsWPHZsyYMQfG89JLL2XNmjXp6OhId3d3Nm/efOB+XV1d6evr
+      S6PRSEdHx4F59fzzz2dwcDBPPfVUOjs7MzIykttuuy2vvPJKxo0bl8MPP9y8eocE4D1saGgo
+      9957b0477bQMDg5m1KhR2blzZy6//PLs3r07d911V1auXJne3t7cd999WbBgQb761a/mlVde
+      yfLly/PMM89k7ty5aTQaeeyxx7Jt27Zceuml6e7uzoQJE7JixYrccMMNaTabueOOOzJ//vz8
+      +Mc/zqRJkzJ+/Phcc801OfPMM7N48eKsXLky69aty1/+8pfMmDEj9913X/bs2ZOhoaHMmjXL
+      jvouarVauf322/PpT386q1atyqxZs7Jt27bcf//92bdvX5rNZjZu3JjHH388w8PDOfroo/PL
+      X/4yy5cvz4MPPpjTTz89V111VebPn5+7774727ZtS39/f0488cRcd911mT9/fn7zm9/koYce
+      yvPPP58//elPmTdvXr7+9a9n7dq1WbNmTVasWJH58+cnSZ599tlcc801aTabefHFFzMyMpLr
+      rrsuIyMjueOOO3L66afnlltuSXd3dyZOnJirr746Z5xxRpYsWZLly5dn48aNefjhh3PKKafk
+      d7/7XXbt2pWBgYF85CMfMa/eoY6DPQDemYGBgdx1111JklNPPTUnn3xyjj/++Fx77bVZtmxZ
+      5syZk9mzZ2fRokVJkvb29ixevDivvvpqLr300gwODqazszN79ux50xHVQw89lEWLFmXu3LlZ
+      smRJnnzyyYyMjKTVaiXJgY8P2tvb853vfCddXV1ZtGhRZsyYkVNPPTVz587Naaed9i6/Iuza
+      tSsbN25Md3d3jj322DzyyCO58MILc/LJJ2fhwoX56Ec/mu3bt2flypX51re+lVGjRqXZbKan
+      pyfXXntt2tvb02w2M3HixMyfPz/79u3LxRdfnH379mVkZCSDg4NZvnx5li1blvHjx+dLX/pS
+      9uzZk0ajke9+97t55ZVX8oMf/ODAeB5++OF87nOfy8KFC9NqtbJ06dJceumlOfPMM7Ns2bI8
+      9thjb5pXr/9+5ZVXpqenJ5dddlmmTp2aj3/845kxY0bOPvvsg/Lavt8IwHtcd3d33ngSt2HD
+      hiRJo9FIW1tbGo3GgZ/Xb280GhkaGkpHR0fa2l67DDRt2rTcdddd2bt3b8aOHZtms5lWq3Vg
+      eVtb25v+43/9368/1+v3ff224eHh/9uN5y099dRTGR4ezu23357+/v688MILufDCC//lPWk0
+      Gmk2mwfey0ajkQULFmT06NHZv3//gXW93fvYarX+ZW69PhfeOOfe6I3zz7z67yEA73F79uzJ
+      kiVLkiQf+tCHMmfOnH97Wjw0NJSbbropa9euzbx58zJq1KgkyfTp03PSSSflm9/8Zo499thM
+      mTIlZ511Vn72s5/l73//e5555plcccUVefTRR/OrX/0qhx12WHbs2PG2zzNt2rT8+te/zssv
+      v5wLLrjAqfq76G9/+1sWLVqUefPmZWBgIF/+8pezY8eOHH/88bn11lvT19eXc845J8PDw1m2
+      bFnOP//8t31/jjnmmANnmOedd16SZPTo0Zk7d26WLl2anp6eTJkyJePGjXvb8Zx99tn5/ve/
+      n82bN+ewww7LWWedlZtuuilr1qzJE088kYsvvjjr16/PnXfemT/+8Y956aWX3nZdrx+o7Ny5
+      MxdddJF59Q41Wq/nlvecZrOZf/zjHweOnMaNG5dJkyZl69atmTZtWvr6+jJ27NiMHTs2GzZs
+      yNSpU3PhhRdm8eLF6ezszMyZM//l6KrZbGbdunXZsWNHZsyYkZ6enjz77LPZsmVLZs+enSOO
+      OCK7d+/OE088kcmTJ6fRaOS4447L5s2bc8wxx6StrS0bNmzI9OnTs3///qxatSqHHHJIPvzh
+      D9tR30XPPfdcpkyZks7OzrRarWzcuDFHHXVURo0alccffzyHHnpoZs6cmRdffDHr1q3LSSed
+      lFdffTVHHnlkurq60mq18swzz2TGjBkHLvYODAxk9uzZ6e3tzbRp09JqtbJq1ar09/fnYx/7
+      WMaMGZNnn302J5xwQvbv358XXnghxx9//IExbd26NRs3bszUqVMzefLkrFu3Lr29vTnllFMy
+      ceLE7NmzJ48//ngmTZqUtra2TJs2Lb29vZkyZUra29uzfv36fOADH0iz2czq1avTaDRcA/gP
+      EIBChoaGcsUVV+RnP/vZwR4K8F/gLQPQarWiCwDvb295DWBgYCADAwPv9lgAeBf5CAigKH8K
+      AqAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAo
+      AQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIA
+      gKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAo
+      SgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIE
+      AKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAo
+      AQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIA
+      gKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAo
+      SgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIE
+      AKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAiuo42APgv8vQ
+      0FBGRkbS2dn5lst37NiR8ePHp62tLa+++mpGRkYOLOvu7k57e3u2bduWjo6OHH744Wk0Gu/W
+      0HkParVa2bFjR5rNZo488sg0Go20Wq1s3749w8PDOeqoo9LW1pZ//vOfBx7TaDTS3d2dtjbH
+      r++UAJDktR1x+fLlueeee3Luuefmk5/85Jvus3r16ixdujQ/+tGPMmHChDzwwAPZvXt3Wq1W
+      Hn300fzwhz/MypUr8/TTT2dgYCDz5s3LJz7xiYOwNbwXNJvN/OQnP0lHR0f6+/szZcqUfOEL
+      X8i9996bbdu2pbOzM1u2bMnVV1+d3/72txkZGcnIyEhWr16dG2+8MWPHjj3Ym/CeJwAkeW1n
+      HBkZyfnnn5/BwcE3LR8YGMgf/vCHzJ07N61WKx0dHfn85z+fJNm2bVt27dqVI444Io888kiW
+      LFmSoaGhLFu2LHPmzEl7e/u7vTm8BzQajXz2s5/N5MmTs3///lx//fVJknPPPTejRo1Kq9XK
+      kiVLMjIykssuuyxJsmbNmnR2dqarq+tgDv19wzkUSZKOjo6cfvrpb7tj3XPPPTnnnHPedNTV
+      arVy//3351Of+lSGh4dz6KGHpr29PWPGjElXV9dbxgSSpK2tLVOmTEl/f39uu+22zJkz58Cy
+      hx56KDfeeGOmT5+eMWPGJHltrj3wwAM555xzfLT4HyIA/D9t2LAh69evT09PT3bv3p0XX3wx
+      +/fvT/LaNYGXXnopM2fOPHD/Vqt14Hc7Kv/O1q1bs3Tp0syaNSsLFixI8loYjj766JxwwgnZ
+      vHlzhoaGkiTr1q3L+PHjM3HixIM55PcVAeBttVqtDA8Pp9lsZubMmVmxYkV6e3uzatWqDA4O
+      ptVq5cEHH8yCBQvSaDQyatSo7NmzJ81mM/v27Ut/f39Gjx59sDeD/1IjIyP56U9/mksuuSRz
+      5849cAF4eHg4s2bNyrnnnptJkyZl8+bNabVaue+++7Jw4UIHFf9BrgGQJNm1a1fuvPPO9PX1
+      ZXBwMJs2bcoFF1yQm2++OYsXL8706dOTJP39/Tn77LMzduzY7NmzJ1u2bMlFF12U5LWj/TPO
+      OCPXX399hoeHc9555/mmBm9r586d2bRpU+65554kSU9PTy655JLceuutGRgYyOjRo7Nz585M
+      nTo1fX19GTNmTI4++uiDPOr3l0brjefr8Aa///3vM3Xq1MyePfv/63F79+5Ne3v7236VFP6d
+      VquV/v7+NJvNdHd3O+L/PyQAvK29e/f6qh28jwkAQFE+oAUoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAo
+      AQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIA
+      gKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAo
+      SgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIE
+      AKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAo
+      AQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIA
+      gKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAo
+      SgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIE
+      AKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAA
+      ihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAoAQAoSgAAihIAgKIEAKAo
+      AQAoSgAAihIAgKIEAKCo/wESbuNLPWskMAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
